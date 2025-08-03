@@ -26,3 +26,23 @@
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Gemini App</title>
+  </head>
+  <body>
+    <h1>Gemini Data</h1>
+    <div id="output">Loading...</div>
+
+    <script>
+      async function loadData() {
+        const response = await fetch("/.netlify/functions/getGeminiData");
+        const data = await response.json();
+        document.getElementById("output").innerText = JSON.stringify(data);
+      }
+
+      loadData();
+    </script>
+  </body>
+</html>
