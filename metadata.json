@@ -1,0 +1,5 @@
+{
+  "name": "PDF Table Extractor AI",
+  "description": "An AI-powered tool to extract tables from PDF documents. Upload a PDF, and the Gemini AI will analyze each page to identify and extract tabular data, which can then be downloaded as a CSV file or sent directly to Google Sheets.",
+  "requestFramePermissions": []
+}
